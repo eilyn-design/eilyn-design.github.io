@@ -39,6 +39,7 @@ var messages = {
 
 
 //Variable del codigo de pais
+var countryCodes = ['cr','us', 'int']
 
 // Define month full names
 var monthFull = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -114,6 +115,24 @@ function makeCalendar(dateStart, dateLength) {
 		startMonth = parseInt(params[0] - 1),
 		startYear = parseInt(params[2]),
 		formatted = startYear + '/' + startMonth + '/' + startDay;
+
+
+	//Feriados
+
+	var = listHolidays;
+	var = validCountryCode = countryCodes.includes(countryCode);
+
+	if (validCountryCode) {
+		holidays(countryCode).then (data => listHolidays =data);
+	} else {
+		listHolidays =  holidays(countryCode[2])
+	}
+
+
+
+
+
+
 
 	// Create new month structure
 	createNewMonth(startMonth, startYear);
@@ -249,6 +268,10 @@ function createNewMonth(curMonth, curYear) {
 	// Add all empty day spaces before first day of month
 	addEmptyDaySpaces(curYear, curMonth, firstDay, true);
 }
+
+
+
+
 
 
 // Fill days on calendar before user selected date
