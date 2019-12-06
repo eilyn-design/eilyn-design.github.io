@@ -323,9 +323,10 @@ function fillEmptyMonth(year, month, start, length) {
 
 // Fetch JSON *cross your finger*
 function holidays(cc){
-	return fetch(`./holidays/${cc}.json`);
+	return fetch(`./holidays/${cc}.json`)
 	       .then(response => response.json())
 	       .then(data =>{
+	       	console.log(data)
 	       	return data
 	       });
 }
