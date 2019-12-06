@@ -27,6 +27,9 @@ const validations = {
 	/*countryCode: function(value) {
 		return value.length === 2 && isNaN(value);
 	}*/
+
+	var x = document.getElementById['countryCode'].value;
+	console.log(x);
 };
 
 // Validation error messages
@@ -118,7 +121,7 @@ function makeCalendar(dateStart, dateLength) {
 	//Feriados
 
 	var listHolidays;
-	var = validCountryCode = countryCodes.includes(countryCode);
+	var validCountryCode = countryCodes.includes(countryCode);
 
 	if (validCountryCode) {
 		holidays(countryCode).then (data => listHolidays =data);
