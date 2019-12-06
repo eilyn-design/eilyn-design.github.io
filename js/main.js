@@ -23,6 +23,10 @@ const validations = {
 	daysLength: function(value) {
 		return value.match(/^([1-9][0-9]{0,2})$/);
 	}
+
+	countryCode: function(value) {
+		return value.length == 2;
+	}
 };
 
 // Validation error messages
