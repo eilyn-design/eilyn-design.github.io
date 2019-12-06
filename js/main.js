@@ -129,11 +129,6 @@ function makeCalendar(dateStart, dateLength) {
 	}
 
 
-
-
-
-
-
 	// Create new month structure
 	createNewMonth(startMonth, startYear);
 
@@ -324,6 +319,15 @@ function fillEmptyMonth(year, month, start, length) {
 		$day_cell.appendChild($day_name);
 		$month.appendChild($day_cell);
 	}
+}
+
+// Fetch JSON *cross your finger*
+function holidays(cc){
+	return fetch(`./holidays/${cc}.json`);
+	       .then(response => response.json())
+	       .then(data =>{
+	       	return data
+	       });
 }
 
 
