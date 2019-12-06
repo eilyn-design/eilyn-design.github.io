@@ -25,7 +25,7 @@ const validations = {
 	}
 
 	countryCode: function(value) {
-		return value.length == 2;
+		return value.length === 2 && isNaN(value);
 	}
 };
 
