@@ -33,9 +33,12 @@ const validations = {
 var messages = {
 	required: 'Required field',
 	dateFormat: 'Invalid date format. Please use mm/dd/yyyy',
-	daysLength: 'Use only numeric chacters between 1 and 999.'
+	daysLength: 'Use only numeric chacters between 1 and 999.',
+	countryCode:'Only 2 characters'
 }
 
+
+//Variable del codigo de pais
 
 // Define month full names
 var monthFull = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
