@@ -27,9 +27,6 @@ const validations = {
 	/*countryCode: function(value) {
 		return value.length === 2 && isNaN(value);
 	}*/
-
-	var x = document.getElementById['countryCode'].value;
-	console.log(x);
 };
 
 // Validation error messages
