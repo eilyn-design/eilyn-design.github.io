@@ -24,9 +24,9 @@ const validations = {
 		return value.match(/^([1-9][0-9]{0,2})$/);
 	}
 
-	countryCode: function(value) {
+	/*countryCode: function(value) {
 		return value.length === 2 && isNaN(value);
-	}
+	}*/
 };
 
 // Validation error messages
@@ -95,8 +95,6 @@ function formatNames(type, useShort) {
 	// Return results
 	return arrayFinal;
 }
-
-
 
 
 /*
