@@ -103,7 +103,7 @@ function formatNames(type, useShort) {
 
 
 // Make calendar
-function makeCalendar(dateStart, dateLength) {
+function makeCalendar(dateStart, dateLength, countryCode) {
 	// Parse dateLength value just to make sure we work with an integer
 	dateLength = parseInt(dateLength);
 
@@ -261,10 +261,6 @@ function createNewMonth(curMonth, curYear) {
 	// Add all empty day spaces before first day of month
 	addEmptyDaySpaces(curYear, curMonth, firstDay, true);
 }
-
-
-
-
 
 
 // Fill days on calendar before user selected date
