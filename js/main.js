@@ -119,7 +119,7 @@ function makeCalendar(dateStart, dateLength) {
 
 	//Feriados
 
-	var = listHolidays;
+	var listHolidays;
 	var = validCountryCode = countryCodes.includes(countryCode);
 
 	if (validCountryCode) {
